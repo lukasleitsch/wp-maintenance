@@ -1,0 +1,6 @@
+#!/bin/bash
+
+wp @all core check-update
+wp @all plugin list --update=available
+wp @all language core list --update=available
+wp @all user list

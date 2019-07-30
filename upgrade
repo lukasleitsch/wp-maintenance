@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Upgrade WordPress, plugins and languages
+wp @all core upgrade --minor
+wp @all plugin upgrade --all
+wp @all language core update
+
+# Open all pages in browser
+open $(wp @all option get siteurl | grep -v "^@")

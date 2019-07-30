@@ -1,0 +1,5 @@
+@example-website-1:
+  ssh: example1/path/to/wordpress/
+
+@example-website-2:
+  ssh: example2/another/path/to/wordpress/
